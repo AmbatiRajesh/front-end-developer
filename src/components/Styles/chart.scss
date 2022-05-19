@@ -1,0 +1,76 @@
+$primary-style:larger;
+$primary-family:Times New Roman, Times, serif;
+$primary-color:black;
+*{
+    box-sizing:border-box;
+
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    background-color:white;
+}
+.card__image{
+    padding:10px;
+}
+.container{
+    background-color: aliceblue;
+    box-shadow: 0px 0px 10px black;
+    display:inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container__form{
+    padding:30px;
+}
+.container__form input{
+    display: block;
+    width:300px;
+    height:30px;
+    margin-bottom:-12px;
+    outline:none;
+    border:1px solid $primary-color;
+    border-radius:5px;
+    font-size:20px;
+    font-family:$primary-family;
+
+}
+.container__form__checkbox input{
+    display: inline-block;
+    width:auto;
+    height: auto;
+   
+}
+.container__form label,span{
+    font-size:$primary-style;
+    font-family:$primary-family;
+}
+.container__form__heading{
+    font-size:$primary-style;
+    font-family:$primary-family;
+    color:$primary-color;
+    font-weight:bolder;
+    margin-top:0px;
+}
+.container__form__button button{
+    background-color: blue;
+    display: inline-block;
+    border:none;
+    color: white;
+    padding: 10px;
+    width:180px;
+    cursor: pointer;
+}
+.container__form__button button:active{
+    background-color:green;
+    box-shadow: 0px 0px 5px black;
+    padding: 12px;
+}
+
+.container__form__error{
+    position: relative;
+    top:5px;
+    color: #008cff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+}
